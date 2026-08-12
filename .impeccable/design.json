@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "name": "VC Workout",
+  "creativeNorthStar": "Luminous Training Instrument",
+  "conceptSeed": "a5976807",
+  "direction": {
+    "thesis": "A luminous training instrument for fast set logging, refusing a generic fitness dashboard grid.",
+    "ownWorld": "True-black field, charcoal plates, cool periwinkle actions, pale-cyan live information, and sparing warm-peach records.",
+    "story": "Resume or choose a routine, record the current set beside prior truth, recover safely, then review history and progress.",
+    "firstViewport": "Compact header, dominant start or resume plate, and ranked routine rail above shallow thumb navigation.",
+    "form": "A current-exercise ledger with one truth per control and damped, functional motion.",
+    "finish": "Store this design system and enforce it on every future change."
+  },
+  "tokens": {
+    "colors": {
+      "black": "#000000",
+      "ink": "#050505",
+      "surface": "#121313",
+      "surfaceRaised": "#1a1b1b",
+      "surfaceActive": "#222326",
+      "line": "#2b2d31",
+      "text": "#f6f7fb",
+      "muted": "#9a9ba4",
+      "quiet": "#8f919a",
+      "periwinkle": "#c6d3ff",
+      "periwinkleInk": "#121936",
+      "cyan": "#cceff1",
+      "peach": "#ffd0ad",
+      "danger": "#ffb4ae"
+    },
+    "fontFamily": "Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+    "baseRadiusPx": 14,
+    "minimumTouchTargetPx": 48,
+    "easing": "cubic-bezier(.16, 1, .3, 1)",
+    "numericVariant": "tabular-nums"
+  },
+  "responsive": {
+    "primaryViewportWidthPx": { "min": 360, "max": 430 },
+    "largeViewportBehavior": "centered-phone-surface",
+    "desktopSpecificLayout": false,
+    "safeAreaRequired": true
+  },
+  "components": {
+    "setLedger": "Keep previous truth adjacent to separate kg, reps, RIR, and completion controls.",
+    "numericSheet": "Large numeric entry with focus trap, Escape dismissal, and focus restoration.",
+    "finishSheet": "Concise summary with protected-draft failure recovery and guarded discard.",
+    "restDock": "Single pale-cyan live state with timestamp-derived countdown and Skip action.",
+    "bottomNavigation": "Home, Routines, History, and Progress only; absent during Active Workout.",
+    "recordPanel": "Warm peach reserved for meaningful personal-record emphasis."
+  },
+  "states": {
+    "pending": "Label the in-flight action while retaining context.",
+    "saved": "Quiet confirmation without celebration.",
+    "liveOrCompleted": "Use cyan with restrained luminance.",
+    "record": "Use peach sparingly.",
+    "writeFailure": "Preserve data, surface the failure, and expose retry.",
+    "loadFailure": "Never masquerade as empty; explain protection and expose retry.",
+    "draftConflict": "Prefer newer draft and allow restoring the alternate.",
+    "destructive": "Require explicit confirmation and explain loss or recalculation."
+  },
+  "refusals": [
+    "light mode",
+    "glassmorphism",
+    "pervasive neon",
+    "gradient text",
+    "generic icon-card dashboards",
+    "desktop sidebars",
+    "decorative exercise imagery",
+    "gamification or trophy language",
+    "literal aviation gauges"
+  ]
+}

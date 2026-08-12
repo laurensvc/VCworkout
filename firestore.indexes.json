@@ -1,0 +1,18 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "workouts",
+      "queryScope": "COLLECTION",
+      "fields": [{ "fieldPath": "completedAt", "order": "DESCENDING" }]
+    },
+    {
+      "collectionGroup": "exercisePerformances",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "exerciseId", "order": "ASCENDING" },
+        { "fieldPath": "completedAt", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

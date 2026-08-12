@@ -1,0 +1,50 @@
+{
+  "name": "vc-workout",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc -b --pretty false",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:rules": "firebase emulators:exec --only firestore \"vitest run src/data/firestore-rules.test.ts\"",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@netlify/vite-plugin": "latest",
+    "@tanstack/react-query": "latest",
+    "@tanstack/react-router": "latest",
+    "firebase": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@eslint/js": "latest",
+    "@firebase/rules-unit-testing": "latest",
+    "@playwright/test": "latest",
+    "@tailwindcss/vite": "latest",
+    "@tanstack/router-plugin": "latest",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@testing-library/user-event": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "eslint": "latest",
+    "eslint-plugin-react-hooks": "latest",
+    "eslint-plugin-react-refresh": "latest",
+    "firebase-tools": "latest",
+    "globals": "latest",
+    "jsdom": "latest",
+    "tailwindcss": "latest",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "latest",
+    "vite": "latest",
+    "vitest": "latest"
+  },
+  "packageManager": "pnpm@10.33.4"
+}
